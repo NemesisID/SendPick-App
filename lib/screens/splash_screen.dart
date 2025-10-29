@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen>
     
     // Navigate after delay
     Timer(const Duration(seconds: 3), () {
-      Navigator.of(context).pushReplacementNamed('/home');
+      Navigator.of(context).pushReplacementNamed('/login');
     });
   }
 
@@ -70,19 +70,8 @@ class _SplashScreenState extends State<SplashScreen>
             SlideTransition(
               position: _slideAnimation,
               child: Container(
-                width: 150,
-                height: 150,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(30),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
-                      blurRadius: 20,
-                      offset: const Offset(0, 10),
-                    ),
-                  ],
-                ),
+                width: 300,
+                height: 300,
                 child: Padding(
                   padding: const EdgeInsets.all(20),
                   child: Image.asset(
@@ -116,7 +105,7 @@ class _SplashScreenState extends State<SplashScreen>
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    'Share Your Moments',
+                    'Make your Send Easier',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.grey.shade600,
